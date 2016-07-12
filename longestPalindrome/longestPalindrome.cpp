@@ -26,10 +26,10 @@ public:
                 int j = i + l - 1;
                 if(s[i] == s[j] && length[i+1][j-1]){
                     length[i][j] = true;
-                    if(l > maxLen){
-                        start = i;
-                        maxLen = l;
-                    }
+                    //if(l > maxLen){
+                    start = i;
+                    maxLen = l;
+                    //}
                 }
             }
         }
