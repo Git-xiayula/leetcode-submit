@@ -8,7 +8,8 @@ public:
         if(len == 0) return 0;
         unordered_map<char, bool> currentChar;
         while (end < len){
-            if(currentChar.find(s[end]) == currentChar.end() || currentChar[s[end]] == false){
+            if(currentChar[s[end]] == NULL){
+                //currentChar.find(s[end]) == currentChar.end() || currentChar[s[end]] == false
                 //not found
                 maxLen = max(end-begin+1, maxLen);
                 currentChar[s[end]] = true;
