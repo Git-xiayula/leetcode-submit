@@ -8,7 +8,7 @@ public:
         int circle = 2 * numRows - 2;
         string res = "";
         for(int i = 0; i < numRows; i++){
-            for(int j = i; j < s.size(); j+=lag){
+            for(int j = i; j < s.size(); j += circle){
                 res += s[j];
                 if(i > 0 && i < numRows-1){
                     int t = j + lag - 2*i;
